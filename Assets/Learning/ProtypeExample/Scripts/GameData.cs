@@ -1,10 +1,14 @@
 using UnityEngine;
 
-public static class GameData {
-    public static int CURRENT_LEVEL = 0;
-    public static int SCORE = 0;
-    public static int NUM_MAX_ENEMIES = 10;
+internal static class GameData {
+    public static int currentLevel = 0;
+    public static int numMaxEnemies = 10;
+    public static int playerLives = 3;
+    public static float playerHealth= 100;
+    public static bool gameIsPaused = false;
+    public static bool playerIsDead = false;
+    public static bool gameIsOver = false;
+    public static bool isLoading = false;
+    public static bool showFPS = true;
 
-    public static int PLAYER_LIVES = 3;
-    public static float PLAYER_HEALTH= 100;
 }
